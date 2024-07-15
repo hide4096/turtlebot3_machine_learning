@@ -26,7 +26,7 @@ from sensor_msgs.msg import LaserScan
 from nav_msgs.msg import Odometry
 from std_srvs.srv import Empty
 from tf.transformations import euler_from_quaternion, quaternion_from_euler
-from respawnGoal import Respawn
+from src.turtlebot3_dqn.respawnGoal import Respawn
 
 class Env():
     def __init__(self, action_size):
@@ -69,7 +69,7 @@ class Env():
     def getState(self, scan):
         scan_range = []
         heading = self.heading
-        min_range = 0.13
+        min_range = 0.3
         done = False
 
         for i in range(len(scan.ranges)):
