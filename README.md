@@ -30,7 +30,7 @@ $ source ~/.bashrc
 ### Set state
 
 Modify the gazebo model file.
-`turtlebot3_description/urdf/turtlebot3_burger.gazebo.xacro`
+`/opt/ros/noetic/share/turtlebot3_description/urdf/turtlebot3_burger.gazebo.xacro`
 
 ``` bash
 
@@ -52,7 +52,7 @@ Modify the gazebo model file.
 ### Set parameters
 
 DQN hyper parameter is here.
-`turtlebot3_machine_learning/turtlebot3_dqn/nodes/turtlebot3_dqn_stage_#`
+`src/turtlebot3_machine_learning/turtlebot3_dqn/nodes/turtlebot3_dqn_stage_#`
 
 ``` python
 
